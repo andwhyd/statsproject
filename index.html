@@ -53,10 +53,10 @@
 <body class="body">
 <h1 class="heading"><strong>Welcome to our stats project!</strong></h1>
 <h2 class="heading1"><br><br>Thank you for participating in our stats project!
-  <br><br>Please click the run button bellow (will redirect to a google form),
+  <br><br>Please click the start button bellow (will redirect to a google form),
   then follow the instructions on the google form!<br><br></h1>
 <div class="wrapper">
-  <button class="button" onclick="randForm()">Run</button>
+  <button class="button" onclick="randForm()">Start</button>
 </div>
 
 <p id="page"></p>
@@ -65,13 +65,13 @@
 function randForm() {
   var form = Math.floor(Math.random() * 3);
   if (form == 0) {
-    //window.location = "https://www.google.com/";
+    window.location = "https://www.google.com/";
   }
   else if (form == 1) {
-    //window.location = "https://www.google.com/";
+    window.location = "https://www.bing.com/";
   }
   else if (form == 2) {
-    //window.location = "https://www.google.com/";
+    window.location = "https://www.duckduckgo.com/";
   }
   document.getElementById("page").innerHTML = form;
 }
